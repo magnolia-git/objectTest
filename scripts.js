@@ -206,6 +206,7 @@ function redrawCanvas() {
 
 function start() {
 	document.addEventListener("visibilitychange", handleVisibilityChange, false);
+	window.addEventListener("touchstart", testHit);
 	make();
 	song.play();
 	playing = true;
