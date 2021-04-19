@@ -1,0 +1,60 @@
+<html>
+	<head>
+		<title>Object Test</title>
+		<link rel="stylesheet" type="text/css" href="style.css" />
+		<script src="scripts.js"></script>
+	</head>
+
+	<body onload="keyEvent()">
+
+		<div id="content">
+
+
+			<img class="visually-hidden" id="markerLeft" src="beatMarkerLeft.png" alt="beatMarkerLeft">
+			<img class="visually-hidden" id="redMarkerLeft" src="redMarkerLeft.png" alt="redMarkerLeft">
+			<img class="visually-hidden" id="redMarkerLeft2" src="redMarkerLeft2.png" alt="redMarkerLeft2">
+			<img class="visually-hidden" id="markerRight" src="beatMarkerRight.png" alt="beatMarkerRight">
+			<img class="visually-hidden" id="redMarkerRight" src="redMarkerRight.png" alt="redMarkerRight">
+			<img class="visually-hidden" id="redMarkerRight2" src="redMarkerRight2.png" alt="redMarkerRight2">
+			<img class="visually-hidden" id="pressPointLeft" src="pressPointLeft.png" alt="pressPointLeft">
+			<img class="visually-hidden" id="pressPointRight" src="pressPointRight.png" alt="pressPointRight">
+			<img class="visually-hidden" id="fadeInRight" src="beatFadeIn.png" alt="beatFadeIn">
+			<img class="visually-hidden" id="fadeInLeft" src="beatFadeIn2.png" alt="beatFadeIn2">
+			<img class="visually-hidden" id="heart" src="hart.png" alt="hart">
+
+			<audio id="myAudio" preload>
+				<source src="untitled.ogg" type="audio/ogg">
+			</audio>
+			<audio id="great">
+				<source src="great.ogg" type="audio/ogg">
+			</audio>
+			<audio id="early">
+				<source src="early.ogg" type="audio/ogg">
+			</audio>
+			<audio id="late">
+				<source src="late.ogg" type="audio/ogg">
+			</audio>
+			<audio id="miss">
+				<source src="miss.ogg" type="audio/ogg">
+			</audio>
+			<p style="text-align: center;">
+				<img src="Banner.png" alt="Banner">
+			</p>
+			<div style="text-align: center;">
+				<button onclick="start(); this.disabled = true;" style="width: 50%; font-size: 24px;">Start</button>
+			</div>
+			<div id="information">
+				<marquee>At the mercy of your browser's performance! :)</marquee>
+				<p>Chain: <span id="score" /></p>
+				<p>Best Chain: <span id="best" /></p>
+				<p>Hit level: <span id="rank" /></p>
+			</div>
+			<p/>
+			<div style="text-align: center;">
+				<canvas id="myCanvas" width="1000" height="120"></canvas>
+			</div>
+		</div>
+
+	</body>
+
+</html>

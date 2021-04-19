@@ -1,0 +1,45 @@
+body {
+  background-color: black;
+}
+
+@keyframes animatedBackground {
+  from { background-position: 0px 0px; }
+  to { background-position: -960px -540px; }
+}
+
+#myCanvas {
+  background-color: black;
+  border-radius: 20%;
+}
+
+#information {
+  padding: 5px;
+  position: absolute;
+  left: 5%;
+  top: 5%;
+  width: 200px;
+  border-radius: 20px;
+  background-color: grey;
+  color: white;
+  font-size: 24px;
+}
+
+#content {
+  margin: auto;
+  width: 1000px;
+  padding: 10px;
+  border: 3px solid;
+  border-radius: 10px;
+  background-color: #c7eeff;
+  background-image: url("BG1.png");
+  animation: animatedBackground 30s linear infinite;
+}
+
+.visually-hidden {
+  position: absolute;
+  left:     -10000px;
+  top:      auto;
+  width:    1px;
+  height:   1px;
+  overflow: hidden;
+}
